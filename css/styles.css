@@ -17,7 +17,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -34,7 +33,6 @@ ul, ol {
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
   outline: 1px solid blue;
   width: 1600px;
 }
@@ -47,8 +45,38 @@ ul, ol {
  margin: 0 auto;
 }
 
+
 /*header*/
 
+.page-header {
+  outline: 1px solid blue;
+  width: 1600px;
+  border-bottom: 1px solid #ECECEC;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.hader-block {
+  display: flex;
+}
+.contact {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+}
+.mail {
+margin-right: 50px;
+
+}
+.tel {
+ margin-right: 0;
+
+}
+.header-nav {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 331px;
+  width: 294px;
+}
 .header-logo {
   font-family: Raleway;
   font-size: 26px;
@@ -56,15 +84,17 @@ ul, ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+  
 }
 .header-logo .logo-web {
   color: var(--accent-color);
 }
-
 .header-logo .logo-studio {
   color: var(--primary-text-color);
 }
-
 .header-item {
   color: var(--primary-text-color);
   font-size: 14px;
@@ -72,23 +102,18 @@ ul, ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  margin-right: 50px;
 }
 .header-item:hover,
 .header-item:focus {
   color: var(--accent-color);
 }
-
 .header-list .header-item.current {
   color: var(--accent-color);
 }
-
-.page-header{
-  padding-top: 32px;
-  padding-bottom: 32px;
-  outline: 1px solid blue;
-  width: 1600px;
+.header-list {
+  display: flex;
 }
-
 .page-header .contact-link {
   color: var(--text-color);
   font-size: 14px;
@@ -102,7 +127,8 @@ ul, ol {
 .hero {
   background: var(--second-bg-color);
   text-align: center;
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero .titel {
   color: var(--third-color);
@@ -123,16 +149,25 @@ ul, ol {
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
 }
 
 
 
 /*main benefits*/
 
-
 .non-title {
   display: none;
 }
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 
 .ben-list-title {
   font-size: 14px;
@@ -163,11 +198,18 @@ ul, ol {
   text-align: center;
   margin-bottom: 50px;
 }
+
+.business-list {
+  display: flex;
+  justify-content: space-between;
+}
 /*main team*/
 .team-item {
   width: 270px;
   height: 368px;
-  
+}
+.team-container {
+  padding-top: 94px;
 }
 .team-title {
   font-size: 16px;
@@ -187,6 +229,14 @@ ul, ol {
   background: var(--third-bg-color);
 }
 
+.team-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 94px;
+   
+}
+
 /*footer*/
 .footer {
   background: var(--second-bg-color);
@@ -194,7 +244,6 @@ ul, ol {
   padding-top: 60px;
   padding-bottom: 60px;
   outline: 1px solid blue;
-
 }
 .footer-logo {
   font-family: Raleway;
@@ -203,6 +252,10 @@ ul, ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  
+}
+.footer-address {
+  margin-top: 20px;
 }
 
 .footer-logo .logo-web {
@@ -220,6 +273,10 @@ ul, ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+  margin-bottom: 9px;
+}
+.footer-contact:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contact .contact-link {
@@ -237,6 +294,7 @@ ul, ol {
 }
 
 /*portfolio page*/
+
 .portfolio .button-item:hover,
 .portfolio .button-item:focus {
   background: var(--accent-color);
@@ -252,6 +310,19 @@ ul, ol {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-item {
+  padding: 6px 22px;
+  border: 0px;
+}
+.but-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 
 .portfolio .project-title {
   font-size: 18px;
@@ -266,4 +337,24 @@ ul, ol {
   font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  margin-left: -30px;
+}
+.project-item {
+ flex-basis: calc(100% / 3 - 30px);
+ margin-left: 30px;
+ margin-bottom: 30px;
+}
+.border-card {
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+ 
+}
+.project-img {
+  display: block;
 }
