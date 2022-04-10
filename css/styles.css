@@ -33,7 +33,6 @@ ul, ol {
 }
 .section {
   padding-top: 94px;
-  outline: 1px solid blue;
   width: 1600px;
 }
 
@@ -41,7 +40,6 @@ ul, ol {
  width: 1200px;
  padding-left: 15px;
  padding-right: 15px;
- outline: 1px solid tomato;
  margin: 0 auto;
 }
 
@@ -49,7 +47,6 @@ ul, ol {
 /*header*/
 
 .page-header {
-  outline: 1px solid blue;
   width: 1600px;
   border-bottom: 1px solid #ECECEC;
   padding-left: 200px;
@@ -243,7 +240,6 @@ margin-right: 50px;
   width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
-  outline: 1px solid blue;
 }
 .footer-logo {
   font-family: Raleway;
