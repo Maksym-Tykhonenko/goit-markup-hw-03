@@ -92,20 +92,23 @@ margin-right: 50px;
 .header-logo .logo-studio {
   color: var(--primary-text-color);
 }
-.header-item {
+
+ .header-item:not(:last-child) {
+    margin-right: 50px;
+}
+.nav-link {
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  margin-right: 50px;
 }
 .header-item:hover,
 .header-item:focus {
   color: var(--accent-color);
 }
-.header-list .header-item.current {
+.header-list .nav-link.current {
   color: var(--accent-color);
 }
 .header-list {
@@ -344,6 +347,9 @@ margin-right: 50px;
  flex-basis: calc(100% / 3 - 30px);
  margin-left: 30px;
  margin-bottom: 30px;
+}
+.project-item:nth-child(n + 7) {
+ margin-bottom: 0;
 }
 .border-card {
   border-left: 1px solid #EEEEEE;
